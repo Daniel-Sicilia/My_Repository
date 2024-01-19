@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+#header-img {
+    width: 75px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 650px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-desc {
+    font-size: 2.8em;
+    margin-left: 10px;
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+
+#moto {
+    margin-top: 150px;
+}
+
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid  black;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: black;
+    cursor: pointer;
+    color: aliceblue;
+    margin-bottom: 60px;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -125px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+}
+
+#features {
+    margin-top: 30px;
+}
+
+#features .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    height: 70px;
+    width: 20vw;
+}
+
+
+#features .description {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 125px;
+    width: 80vw;
+}
+
+
+h4, p {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+#how_it_works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how_it_works > iframe {
+    max-width: 550px;
+    width: 100%;
+}
+
+.course-header {
+    margin-top: 75px;
+    font-size: 2em;
+}
+
+#courses {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 3px solid #110f0f;
+    border-radius: 5px;
+}
+
+.product > .course-type {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 600;
+}
+
+.product > h2 {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image1 {
+    background-image: url(https://www.italian-renaissance-art.com/images/neck-shoulders-leonardo.jpg);
+    height: 400px;
+    max-width: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+
+#image2 {
+    background-image: url(https://i.pinimg.com/originals/c8/09/37/c809377b52addc7dcc89b580026472a2.jpg);
+    height: 400px;
+    max-width: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+
+#image3 {
+    background-image: url(https://www.joshuanava.biz/how-to-draw/images/1864_67_380.jpg);
+    height: 400px;
+    max-width: 450px;
+    width: 100%;
+    object-fit: fill;
+}
+
+@media (max-width: 800px) {
+    #courses {
+        flex-direction: column;
+    }
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.add {
+    width: 300px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    font-size: 1.5em;
+}
