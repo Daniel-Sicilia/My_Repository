@@ -8,22 +8,21 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #110f0f;
 }
 
 #header-img {
     width: 75px;
     object-fit: contain;
-    z-index: 6;
     overflow-x: hidden;
 }
+
 
 #nav-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
     width: 100%;
     top: 0;
     padding: 10px;
@@ -41,6 +40,12 @@ body {
     padding: 0 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-links:hover a {
+    text-decoration: underline;
+    color: aqua;
 }
 
 @media only screen and (min-width: 650px) {
@@ -52,6 +57,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+
 }
 
 .product-desc {
@@ -75,7 +81,7 @@ input {
 
 h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
+    font-size: 2rem;
     color: aliceblue;
     margin-bottom: 10px;
 }
@@ -83,8 +89,16 @@ h2 {
 #submit {
     background-color: black;
     cursor: pointer;
-    color: aliceblue;
+    color: aqua;
     margin-bottom: 60px;
+    transition: background-color 600ms ease-in-out, color 600ms ease-in-out, border-color 600ms ease-in-out;
+    font-weight: bolder;
+}
+
+#submit:hover {
+    background-color: aqua;
+	color: #151618;
+	border-color: #151618;
 }
 
 section::before {
@@ -119,7 +133,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: antiquewhite;
+    color: aqua;
     height: 70px;
     width: 20vw;
 }
@@ -138,6 +152,7 @@ h4, p {
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     text-align: left;
+    font-weight: bolder;
 }
 
 h4 {
@@ -240,9 +255,52 @@ p {
     border: none;
     outline: none;
     color: aliceblue;
-    background: #000;
+    background-color: #000;
     cursor: pointer;
     position: relative;
     border-radius: 3px;
     font-size: 1.5em;
+    transition: background-color 600ms ease-in-out
 }
+
+.add:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+#bottom {
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#bottom a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#bottom:hover a {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#back-to-top {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+#back-to-top:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+
